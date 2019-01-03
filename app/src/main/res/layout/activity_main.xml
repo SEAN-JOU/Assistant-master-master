@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shaen.assistant.MainActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:orientation="horizontal">
+
+      <TextView
+          android:id="@+id/textView"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:text="ULTRASOUND"
+          android:textSize="15dp" />
+
+      <TextView
+          android:id="@+id/ttt"
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:gravity="center"
+          android:text="TextView"
+          android:textSize="15dp" />
+   </LinearLayout>
+
+   <ToggleButton
+       android:id="@+id/ultrasound"
+       android:layout_width="match_parent"
+       android:layout_height="74dp"
+       android:layout_weight="1"
+       android:text="ToggleButton" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="5"
+       android:orientation="horizontal">
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:orientation="vertical">
+
+         <TextView
+             android:id="@+id/txv"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:gravity="center_vertical"
+             android:text="LED"
+             android:textSize="15dp" />
+
+         <ToggleButton
+             android:id="@+id/led"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="ToggleButton" />
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="0dp"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:orientation="vertical">
+
+         <TextView
+             android:id="@+id/textView1"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:gravity="center_vertical"
+             android:text="AI"
+             android:textSize="15dp" />
+
+         <Button
+             android:id="@+id/ai"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="AI語音控制" />
+      </LinearLayout>
+
+   </LinearLayout>
+
+   <TextView
+       android:id="@+id/textView2"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="1"
+       android:gravity="center_vertical"
+       android:text="MOTOR"
+       android:textSize="15dp" />
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="3"
+       android:orientation="vertical">
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:orientation="horizontal">
+
+
+         <Button
+             android:id="@+id/leftbtn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="left" />
+
+         <Button
+             android:id="@+id/rightbtn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="Right" />
+      </LinearLayout>
+
+      <RadioGroup
+          android:id="@+id/motor"
+          android:layout_width="match_parent"
+          android:layout_height="30dp"
+          android:orientation="horizontal">
+
+         <RadioButton
+             android:id="@+id/go_motor"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="go" />
+
+         <RadioButton
+             android:id="@+id/stop_motor"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="stop" />
+
+         <RadioButton
+             android:id="@+id/back_motor"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:text="back" />
+
+
+      </RadioGroup>
+   </LinearLayout>
+
+   <TextView
+       android:id="@+id/textView3"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_weight="0.5"
+       android:text="SERVO"
+       android:textSize="30dp" />
+
+   <RadioGroup
+       android:id="@+id/servo"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:orientation="horizontal">
+
+      <RadioButton
+          android:id="@+id/right"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="right" />
+
+      <RadioButton
+          android:id="@+id/front"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="front" />
+
+      <RadioButton
+          android:id="@+id/left"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:text="left" />
+
+
+   </RadioGroup>
+</LinearLayout>
